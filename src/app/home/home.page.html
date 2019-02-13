@@ -1,0 +1,49 @@
+
+<ion-content padding>
+	<ion-grid class="borda">
+		<ion-item>
+			<ion-label>AppCalculadora</ion-label>
+		</ion-item>
+		<ion-item>		
+			<ion-input disabled >{{valor}}</ion-input>
+		</ion-item>	
+			<ion-row text-center>
+				<ion-col size ="12">
+					<ion-button  class ="buttons"  (click)="calcular(7)" color="dark">7</ion-button>
+					<ion-button  class ="buttons"  (click)="calcular(8)" color="dark">8</ion-button>
+					<ion-button   class ="buttons"  (click)="calcular(9)" color="dark">9</ion-button>
+					<ion-button   class ="buttons"  (click)="calcular('*')" color="dark">x</ion-button>
+				</ion-col>
+			</ion-row>
+			<ion-row text-center>
+				<ion-col size ="12">
+					<ion-button  class ="buttons"  (click)="calcular(6)" color="dark">6</ion-button>
+					<ion-button  class ="buttons"  (click)="calcular(5)" color="dark">5</ion-button>
+					<ion-button   class ="buttons" (click)="calcular(4)" color="dark">4</ion-button>
+					<ion-button   class ="buttons"  (click)="calcular('-')" color="dark">-</ion-button>
+				</ion-col>
+			</ion-row>
+			<ion-row text-center >
+				<ion-col  size ="12">
+					<ion-button  class ="buttons"  (click)="calcular(1)" color="dark">1</ion-button>
+					<ion-button  class ="buttons"  (click)="calcular(2)" color="dark">2</ion-button>
+					<ion-button   class ="buttons"  (click)="calcular(3)" color="dark">3</ion-button>
+					<ion-button   class ="buttons" (click)="calcular('+')" color="dark">+</ion-button>
+				</ion-col>
+			</ion-row>
+			<ion-row text-center >
+				<ion-col  size ="12" offset='0'>
+					<ion-button  class ="buttons" (click)="calcular(0)" color="dark">0</ion-button>
+					<ion-button  class ="buttons"  (click)="calcular('.')" color="dark">.</ion-button>
+					<ion-button  class ="buttons" (click)="calcular('/')" color="dark">/</ion-button>
+					<ion-button  class ="buttons" (click)="calcular('l')" color="dark">L</ion-button>					
+				</ion-col>
+			</ion-row>
+			<ion-row text-center >
+				<ion-col  size ="12"  >			
+					<ion-button   expand="full"  (click)="calcular('=')" color="dark">=</ion-button>
+				</ion-col>
+			</ion-row>
+			
+	</ion-grid>
+</ion-content>
